@@ -1,3 +1,9 @@
 [gd_scene format=3 uid="uid://dkarwkww03u6x"]
 
+[ext_resource type="PackedScene" uid="uid://bq8cb2dw36al5" path="res://Card.tscn" id="1_glv2v"]
+[ext_resource type="Script" uid="uid://bgad0bdiwvgcd" path="res://Main.cs" id="1_uu6xs"]
+
 [node name="Main" type="Node" unique_id=170259831]
+script = ExtResource("1_uu6xs")
+
+[node name="Card" parent="." unique_id=516992401 instance=ExtResource("1_glv2v")]

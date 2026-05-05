@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://bq8cb2dw36al5"]
 
-[node name="Card" type="Sprite2D" unique_id=516992401]
+[ext_resource type="Script" uid="uid://cywx52jfoxjaj" path="res://Card.cs" id="1_dd2wi"]
+[ext_resource type="Script" uid="uid://b2e0fdugdxenb" path="res://CardSprite.cs" id="2_hael8"]
+
+[node name="Card" type="Node2D" unique_id=1671964327]
+script = ExtResource("1_dd2wi")
+
+[node name="CardSprite" type="Sprite2D" parent="." unique_id=1557768052]
+position = Vector2(1000, 500)
+script = ExtResource("2_hael8")
