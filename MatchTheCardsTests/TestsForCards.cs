@@ -1,14 +1,14 @@
 using GdUnit4;
 using JetBrains.Annotations;
 using static GdUnit4.Assertions;
-namespace MatchTheCards;
+namespace MatchTheCards.MatchTheCardsTests;
 
 [TestSuite]
-public class MyTests 
+public class TestsForCards 
 {
     [TestCase]
     [RequireGodotRuntime, UsedImplicitly]
-    public void CardSprite_WhenTextureIsBackSprite_IsBackSpriteReturnsTrue()
+    public void WhenCardSpriteTextureIsBackSpriteReturnTrue()
     {
         CardSprite cardSprite = AutoFree(new CardSprite());
         AddNode(cardSprite);
