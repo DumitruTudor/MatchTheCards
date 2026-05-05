@@ -66,6 +66,7 @@ project.lock.json
 project.fragment.lock.json
 artifacts/
 **/Properties/launchSettings.json
+*.uid
 
 # VS Code
 .vscode/
@@ -307,3 +308,7 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+# GdUnit4Net
+gdunit4_testadapter_v5/
+reports/
