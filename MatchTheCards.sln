@@ -16,4 +16,6 @@ Global
 		{24DCC373-B235-47F8-A79F-0FEC65D0E2E4}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
 		{24DCC373-B235-47F8-A79F-0FEC65D0E2E4}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
 EndGlobal

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcl43ma7ntw8l"
-path="res://.godot/imported/06-TheLovers.png-82a95023de2cf9d48bbd77b126f948ed.ctex"
+uid="uid://brwfb62vcnad1"
+path="res://.godot/imported/9-TheHermit.png-66d2d2fb13c9775152219bd52075d105.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cards/06-TheLovers.png"
-dest_files=["res://.godot/imported/06-TheLovers.png-82a95023de2cf9d48bbd77b126f948ed.ctex"]
+source_file="res://Assets/Cards/9-TheHermit.png"
+dest_files=["res://.godot/imported/9-TheHermit.png-66d2d2fb13c9775152219bd52075d105.ctex"]
 
 [params]
 

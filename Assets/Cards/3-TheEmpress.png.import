@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bstmu3uvyj04l"
-path="res://.godot/imported/08-Strength.png-8f1707e1bc40fd51336b660a593ba09d.ctex"
+uid="uid://doh52q4io6ons"
+path="res://.godot/imported/3-TheEmpress.png-0f63b898699e118ed9fdd68974b335a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cards/08-Strength.png"
-dest_files=["res://.godot/imported/08-Strength.png-8f1707e1bc40fd51336b660a593ba09d.ctex"]
+source_file="res://Assets/Cards/3-TheEmpress.png"
+dest_files=["res://.godot/imported/3-TheEmpress.png-0f63b898699e118ed9fdd68974b335a4.ctex"]
 
 [params]
 

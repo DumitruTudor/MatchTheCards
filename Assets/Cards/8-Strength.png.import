@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1wu4mjaaavvf"
-path="res://.godot/imported/02-TheHighPriestess.png-8e5cbcf4ea8b119d53f4566e666324f2.ctex"
+uid="uid://bstmu3uvyj04l"
+path="res://.godot/imported/8-Strength.png-f2f9df0c4f2ba16b5f78ed0963dce834.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cards/02-TheHighPriestess.png"
-dest_files=["res://.godot/imported/02-TheHighPriestess.png-8e5cbcf4ea8b119d53f4566e666324f2.ctex"]
+source_file="res://Assets/Cards/8-Strength.png"
+dest_files=["res://.godot/imported/8-Strength.png-f2f9df0c4f2ba16b5f78ed0963dce834.ctex"]
 
 [params]
 

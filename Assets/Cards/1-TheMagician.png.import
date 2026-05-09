@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1onpeao3puax"
-path="res://.godot/imported/05-TheHierophant.png-0ce0aa73073f0078624f20a88028d5e9.ctex"
+uid="uid://bcnckcgbnkafx"
+path="res://.godot/imported/1-TheMagician.png-2c2f8b4bad84596e8fbb7a2369c7f377.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cards/05-TheHierophant.png"
-dest_files=["res://.godot/imported/05-TheHierophant.png-0ce0aa73073f0078624f20a88028d5e9.ctex"]
+source_file="res://Assets/Cards/1-TheMagician.png"
+dest_files=["res://.godot/imported/1-TheMagician.png-2c2f8b4bad84596e8fbb7a2369c7f377.ctex"]
 
 [params]
 

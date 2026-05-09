@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brwfb62vcnad1"
-path="res://.godot/imported/09-TheHermit.png-43ca3883750c8ea489f9212238f7b1da.ctex"
+uid="uid://bck7xw13tg7kq"
+path="res://.godot/imported/7-TheChariot.png-751f390adb38330b6cd0acf6a0d52f69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cards/09-TheHermit.png"
-dest_files=["res://.godot/imported/09-TheHermit.png-43ca3883750c8ea489f9212238f7b1da.ctex"]
+source_file="res://Assets/Cards/7-TheChariot.png"
+dest_files=["res://.godot/imported/7-TheChariot.png-751f390adb38330b6cd0acf6a0d52f69.ctex"]
 
 [params]
 

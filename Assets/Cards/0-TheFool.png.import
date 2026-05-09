@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmsnpq3wghwsx"
-path="res://.godot/imported/04-TheEmperor.png-6a626a6de975be56c6f0e7062ffe5e79.ctex"
+uid="uid://chtmmb4nywt6"
+path="res://.godot/imported/0-TheFool.png-488f402ca1d9134ec9370c004f1c710a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cards/04-TheEmperor.png"
-dest_files=["res://.godot/imported/04-TheEmperor.png-6a626a6de975be56c6f0e7062ffe5e79.ctex"]
+source_file="res://Assets/Cards/0-TheFool.png"
+dest_files=["res://.godot/imported/0-TheFool.png-488f402ca1d9134ec9370c004f1c710a.ctex"]
 
 [params]
 

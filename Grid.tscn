@@ -1,3 +1,33 @@
 [gd_scene format=3 uid="uid://cnf54lva5fqga"]
 
-[node name="Sprite2D" type="Sprite2D" unique_id=480065215]
+[ext_resource type="Script" uid="uid://c0riegbnv7rl5" path="res://Grid.cs" id="1_a433f"]
+
+[node name="Grid" type="Control" unique_id=329378406 node_paths=PackedStringArray("CardContainer")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a433f")
+CardContainer = NodePath("CardContainer")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1689490568]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1.8169359e-06, 0.42575932, 0.07080617, 1)
+
+[node name="CardContainer" type="GridContainer" parent="." unique_id=1024380786]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.109
+anchor_right = 1.2
+anchor_bottom = 1.0
+offset_left = -212.28
+offset_right = -378.0
+grow_horizontal = 2
+grow_vertical = 2

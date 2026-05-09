@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcnckcgbnkafx"
-path="res://.godot/imported/01-TheMagician.png-a92bd547053da75aff8641b3aa5ba4c0.ctex"
+uid="uid://bmsnpq3wghwsx"
+path="res://.godot/imported/4-TheEmperor.png-643e4d6db1343d1c4e80980631623f12.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cards/01-TheMagician.png"
-dest_files=["res://.godot/imported/01-TheMagician.png-a92bd547053da75aff8641b3aa5ba4c0.ctex"]
+source_file="res://Assets/Cards/4-TheEmperor.png"
+dest_files=["res://.godot/imported/4-TheEmperor.png-643e4d6db1343d1c4e80980631623f12.ctex"]
 
 [params]
 

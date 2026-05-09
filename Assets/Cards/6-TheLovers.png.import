@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doh52q4io6ons"
-path="res://.godot/imported/03-TheEmpress.png-986c67740c916313060ff306f1853340.ctex"
+uid="uid://dcl43ma7ntw8l"
+path="res://.godot/imported/6-TheLovers.png-897aaa0983f602e188560d0a4bbe0744.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cards/03-TheEmpress.png"
-dest_files=["res://.godot/imported/03-TheEmpress.png-986c67740c916313060ff306f1853340.ctex"]
+source_file="res://Assets/Cards/6-TheLovers.png"
+dest_files=["res://.godot/imported/6-TheLovers.png-897aaa0983f602e188560d0a4bbe0744.ctex"]
 
 [params]
 
