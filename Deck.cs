@@ -35,8 +35,8 @@ public class Deck
             .Take(pairCount)
             .ToList();
 
-        // Duplicate each card to make pairs, then shuffle again
-        List<CardModel> pairs = pool.Concat(pool)
+        List<CardModel> pairs = pool
+            .Concat(pool.Select(c => new CardModel(c.Index, c.Name)))
             .OrderBy(_ => Guid.NewGuid())
             .ToList();
 

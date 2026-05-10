@@ -10,7 +10,3 @@ CardScene = ExtResource("1_glv2v")
 GridControlNode = NodePath("Grid")
 
 [node name="Grid" parent="." unique_id=329378406 instance=ExtResource("2_r0du0")]
-
-[node name="Card" parent="." unique_id=516992401 instance=ExtResource("1_glv2v")]
-offset_right = 250.0
-offset_bottom = 250.0

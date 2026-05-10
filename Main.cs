@@ -7,7 +7,6 @@ namespace MatchTheCards;
 public partial class Main : Node
 {
     [Export] public PackedScene CardScene { get; set; }
-    [Export] public Grid GridControlNode { get; set; }
     
     private Deck _deck;
 
@@ -21,14 +20,14 @@ public partial class Main : Node
     private void PlaceDeckOnScreen()
     {
         SetupDeck();
-        SetGridSize(_gridSize);
+        SetGridSize();
         List<CardModel> selectedCards = _deck.GetShuffledPairs(_gridSize);
         
         foreach(CardModel card in selectedCards)
         {
             Card tarotCard = CardScene.Instantiate<Card>();
             tarotCard.Initialise(card);
-            GridControlNode.CardContainer.AddChild(tarotCard);
+            Grid.Instance.CardContainer.AddChild(tarotCard);
         }
     }
 
@@ -38,9 +37,9 @@ public partial class Main : Node
         _deck.FillDeck();
     }
     
-    private void SetGridSize(int size)
+    private void SetGridSize()
     {
         _gridSize = 2;
-        GridControlNode.SetColumns(size);
+        Grid.Instance.SetColumns(_gridSize);
     }
 }
