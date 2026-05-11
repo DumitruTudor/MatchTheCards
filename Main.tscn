@@ -4,9 +4,9 @@
 [ext_resource type="Script" uid="uid://bgad0bdiwvgcd" path="res://Main.cs" id="1_uu6xs"]
 [ext_resource type="PackedScene" uid="uid://cnf54lva5fqga" path="res://Grid.tscn" id="2_r0du0"]
 
-[node name="Main" type="Node" unique_id=170259831 node_paths=PackedStringArray("GridControlNode")]
+[node name="Main" type="Node" unique_id=170259831 node_paths=PackedStringArray("GridNode")]
 script = ExtResource("1_uu6xs")
 CardScene = ExtResource("1_glv2v")
-GridControlNode = NodePath("Grid")
+GridNode = NodePath("Grid")
 
 [node name="Grid" parent="." unique_id=329378406 instance=ExtResource("2_r0du0")]

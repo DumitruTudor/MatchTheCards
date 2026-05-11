@@ -5,26 +5,30 @@ namespace MatchTheCards.CardLogic;
 
 public partial class Card : TextureButton
 {
+	public CardModel Model { get; private set; }
 	private const string CardBack = "res://Assets/Cards/CardBack.png";
-
-	public CardModel Model { get; set; }
 	private Texture2D _cardFace;
-	
-	public override void _Ready()
+	private CardMatcher _cardMatcher;
+
+	public void Initialise(CardModel model, CardMatcher cardMatcher)
 	{
-		GD.Print($"[Card] _Ready — Model is: {(Model == null ? "NULL" : Model.Name)}");
+		Model = model;
+		_cardMatcher = cardMatcher;
+		SetTextureToCardBack();
 	}
 
-	public void Initialise(CardModel model)
+	private void SetTextureToCardBack()
 	{
-		GD.Print($"[Card] Initialise called with: {model.Name}");
-		Model = model;
-		
 		_cardFace = GD.Load<Texture2D>(CardBack);
 		SetTextureNormal(_cardFace);
 	}
-
+	
 	public void FlipCard()
+	{
+		SetTextureToCardFront();
+	}
+
+	private void SetTextureToCardFront()
 	{
 		string cardImage = $"res://Assets/Cards/{Model.Index}-{Model.Name}.png";
 		Texture2D cardTexture = GD.Load<Texture2D>(cardImage);
@@ -35,6 +39,6 @@ public partial class Card : TextureButton
 
 	public override void _Pressed()
 	{
-		CardManager.ChooseCard(this);
+		_cardMatcher.ChooseCard(this);
 	}
 }
