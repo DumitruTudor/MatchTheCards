@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="MatchTheCards"
-run/main_scene="uid://dkarwkww03u6x"
+run/main_scene="uid://behkdey6ajuj7"
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameConfig="*uid://bqnlol0ak7m8i"
 
 [display]
 

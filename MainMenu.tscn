@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://behkdey6ajuj7"]
+
+[ext_resource type="Script" uid="uid://cgwcvqkgacq5h" path="res://MainMenu.cs" id="1_i26rj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kjwba"]
+bg_color = Color(0.92099476, 0.9209946, 0.9209946, 1)
+
+[node name="MainMenu" type="Control" unique_id=878275131 node_paths=PackedStringArray("StartGame", "Options", "Exit")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i26rj")
+StartGame = NodePath("VBoxContainer/StartGame")
+Options = NodePath("VBoxContainer/Options")
+Exit = NodePath("VBoxContainer/Exit")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=274025766]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -100.0
+offset_right = 250.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartGame" type="Button" parent="VBoxContainer" unique_id=2072238510]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_kjwba")
+text = "Start Game"
+
+[node name="Options" type="Button" parent="VBoxContainer" unique_id=1451515758]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_kjwba")
+text = "Options"
+
+[node name="Exit" type="Button" parent="VBoxContainer" unique_id=834188174]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.004536462, 0.004536442, 0.0045364466, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_kjwba")
+text = "Exit"
+
+[node name="GameTitle" type="Label" parent="." unique_id=246001422]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -199.0
+offset_top = -217.0
+offset_right = 199.0
+offset_bottom = -123.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Match the Cards!"
+horizontal_alignment = 1
+vertical_alignment = 1

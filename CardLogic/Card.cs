@@ -6,9 +6,11 @@ namespace MatchTheCards.CardLogic;
 public partial class Card : TextureButton
 {
 	public CardModel Model { get; private set; }
-	private const string CardBack = "res://Assets/Cards/CardBack.png";
+	
 	private Texture2D _cardFace;
 	private CardMatcher _cardMatcher;
+	private const string CardBack = "res://Assets/Cards/CardBack.png";
+	private Timer _matchTimer;
 
 	public void Initialise(CardModel model, CardMatcher cardMatcher)
 	{

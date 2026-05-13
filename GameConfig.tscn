@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bqnlol0ak7m8i"]
+
+[ext_resource type="Script" uid="uid://c52m81hwx3aqe" path="res://GameConfig.cs" id="1_p6hjs"]
+[ext_resource type="PackedScene" uid="uid://behkdey6ajuj7" path="res://MainMenu.tscn" id="2_s5dcv"]
+[ext_resource type="PackedScene" uid="uid://btprr5700blkr" path="res://OptionsMenu.tscn" id="3_lylau"]
+[ext_resource type="PackedScene" uid="uid://dkarwkww03u6x" path="res://Main.tscn" id="4_ml0eg"]
+
+[node name="GameConfig" type="Node" unique_id=1773542271]
+script = ExtResource("1_p6hjs")
+MainMenuScene = ExtResource("2_s5dcv")
+OptionsMenuScene = ExtResource("3_lylau")
+GameScene = ExtResource("4_ml0eg")
