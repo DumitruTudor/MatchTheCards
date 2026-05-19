@@ -17,6 +17,15 @@ TwoByTwo = NodePath("VBoxContainer/2X2")
 FourByFour = NodePath("VBoxContainer/4X4")
 SixBySix = NodePath("VBoxContainer/6X6")
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1307115741]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.42745098, 0.07058824, 1)
+
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1129301438]
 layout_mode = 1
 anchors_preset = 8
@@ -54,3 +63,21 @@ theme_override_colors/font_color = Color(0.004536462, 0.004536442, 0.0045364466,
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_bn22w")
 text = "6 X 6"
+
+[node name="GameTitle" type="Label" parent="." unique_id=151402328]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -199.0
+offset_top = -217.0
+offset_right = 199.0
+offset_bottom = -123.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Choose Grid Size"
+horizontal_alignment = 1
+vertical_alignment = 1
