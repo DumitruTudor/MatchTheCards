@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Godot;
 using MatchTheCards.CardLogic;
@@ -7,8 +8,8 @@ namespace MatchTheCards;
 public class GameSetup
 {
     private Deck _deck;
-    private int _gridSize;
-    private readonly CardMatcher _cardMatcher = new();
+    private readonly int _gridSize;
+    private CardMatcher _cardMatcher;
     private readonly PackedScene _cardScene;
     private readonly Grid _grid;
     
@@ -21,10 +22,20 @@ public class GameSetup
 
     public void StartGame()
     {
+        _cardMatcher = new CardMatcher();
+        _grid.AddChild(_cardMatcher);
+        _cardMatcher.Initialise(_gridSize * _gridSize);
+        _cardMatcher.AllCardsMatched += OnAllCardsMatched;
+        
         SetupDeck();
         PlaceDeckOnScreen();
         FlipAllCards();
         SetAllCardsDisabled(true);
+    }
+    
+    private void OnAllCardsMatched()
+    {
+        GameConfig.Instance.GoToMainMenu();
     }
     
     private void SetupDeck()
@@ -34,23 +45,30 @@ public class GameSetup
     }
     
     private void PlaceDeckOnScreen()
-    {
+    {    
         int totalCards = _gridSize * _gridSize;
         int pairCount = totalCards / 2;
 
         _grid.SetColumns(_gridSize);
-        List<CardModel> selectedCards = _deck.GetShuffledPairs(pairCount);
+    
+        Vector2 viewportSize = _grid.GetViewport().GetVisibleRect().Size;
+        const float padding = 20f;
+        const float spacing = 8f;
+        float availableSpace = MathF.Min(viewportSize.X, viewportSize.Y) - padding;
+        float cardSize = (availableSpace - (spacing * (_gridSize - 1))) / _gridSize;
 
+        List<CardModel> selectedCards = _deck.GetShuffledPairs(pairCount);
         foreach (CardModel card in selectedCards)
         {
-            PlaceCard(card);
+            PlaceCard(card, cardSize);
         }
     }
 
-    private void PlaceCard(CardModel card)
+    private void PlaceCard(CardModel card, float cardSize)
     {
         Card tarotCard = _cardScene.Instantiate<Card>();
         tarotCard.Initialise(card, _cardMatcher);
+        tarotCard.CustomMinimumSize = new Vector2(cardSize, cardSize);
         _grid.CardContainer.AddChild(tarotCard);
     }
     

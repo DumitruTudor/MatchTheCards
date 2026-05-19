@@ -9,5 +9,7 @@ public partial class Grid : Control
 	public void SetColumns(int numberOfColumns)
 	{
 		CardContainer.Columns = numberOfColumns;
+		CardContainer.AddThemeConstantOverride("h_separation", 8);
+		CardContainer.AddThemeConstantOverride("v_separation", 8);
 	}
 }

@@ -6,7 +6,7 @@ public partial class OptionsMenu : Control
 {
     [Export] public Button TwoByTwo { get; set; }
     [Export] public Button FourByFour { get; set; }
-    [Export] public Button EightByEight { get; set; }
+    [Export] public Button SixBySix { get; set; }
 
     [Signal] public delegate void GridSizeChosenEventHandler(int gridSize);
 
@@ -14,7 +14,7 @@ public partial class OptionsMenu : Control
     {
         TwoByTwo.Pressed += () => OnGridSizeChosen(2);
         FourByFour.Pressed += () => OnGridSizeChosen(4);
-        EightByEight.Pressed += () => OnGridSizeChosen(8);
+        SixBySix.Pressed += () => OnGridSizeChosen(6);
     }
 
     private void OnGridSizeChosen(int gridSize)
